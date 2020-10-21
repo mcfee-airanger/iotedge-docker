@@ -1,0 +1,42 @@
+{
+  "name": "iotedge",
+  "version": "0.0.1",
+  "description": "an NPM wrapper around the Azure IoT Edge dev tool",
+  "main": "index.js",
+  "files": [
+    "bin",
+    "lib",
+    "README.md",
+    "LICENSE.md",
+    "iotedgedev-license.md",
+    "Dockerfile"
+  ],
+  "bin": {
+    "start-iotedge": "./bin/run-container.sh",
+    "build-iotedge": "docker build . -t iotedge-runtime",
+    "iotedge": "./bin/iotedge.sh"
+  },
+  "scripts": {
+    "build": "docker build . -t iotedge-runtime",
+    "preinstall": "docker --version",
+    "start": "./bin/run-container.sh"
+  },
+  "author": {
+    "name": "Pine View Software AS",
+    "email": "hello@pineview.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pineviewlabs/iotedge-docker.git"
+  },
+  "contributors": [
+    "Andrei Rusu <andrei@pineview.io>"
+  ],
+  "keywords": [
+    "IoT",
+    "IoTEdge",
+    "docker",
+    "Azure IoT Edge"
+  ],
+  "license": "MIT"
+}
