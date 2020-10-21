@@ -1,5 +1,5 @@
 {
-  "name": "iotedge",
+  "name": "azure-iotedge-runtime",
   "version": "0.0.1",
   "description": "an NPM wrapper around the Azure IoT Edge dev tool",
   "main": "index.js",
