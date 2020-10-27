@@ -17,7 +17,6 @@
     "iotedge": "./bin/iotedge.sh"
   },
   "scripts": {
-    "build": "./bin/build-container.sh",
     "preinstall": "docker --version",
     "start": "./bin/run-container.sh"
   },
