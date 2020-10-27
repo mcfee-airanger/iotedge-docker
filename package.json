@@ -17,7 +17,7 @@
     "iotedge": "./bin/iotedge.sh"
   },
   "scripts": {
-    "build": "docker build . -t iotedge-runtime",
+    "build": "./bin/build-container.sh",
     "preinstall": "docker --version",
     "start": "./bin/run-container.sh"
   },
