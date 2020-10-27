@@ -13,7 +13,7 @@
   ],
   "bin": {
     "start-iotedge": "./bin/run-container.sh",
-    "build-iotedge": "docker build . -t iotedge-runtime",
+    "build-iotedge": "./bin/build-container.sh",
     "iotedge": "./bin/iotedge.sh"
   },
   "scripts": {
