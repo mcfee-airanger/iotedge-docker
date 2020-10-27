@@ -1,6 +1,6 @@
 {
   "name": "iotedge-runtime",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "an NPM wrapper around the Azure IoT Edge dev tool",
   "main": "index.js",
   "files": [
