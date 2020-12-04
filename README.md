@@ -1,7 +1,7 @@
-# azure-iotedge-runtime
+# iotedge-runtime
 ### Run the [Azure IoT Edge](https://azure.microsoft.com/en-us/services/iot-edge/) runtime in a Docker container
 
-This project is based on the [Azure IoT Edge dev tool](https://github.com/Azure/iotedgedev), but is only contains the Docker image needed to run the Azure IoT Edge runtime in a container.
+This project is based on the [Azure IoT Edge dev tool](https://github.com/Azure/iotedgedev), but it only contains the Docker image needed to run the Azure IoT Edge runtime in a container.
 
 It is supposed to be used mostly in local development environments and it's wrapped in an NPM package.
 
