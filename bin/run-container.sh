@@ -23,7 +23,7 @@ docker run \
     -v //var//run//docker.sock://var//run//docker.sock \
     -p 15580:15580 \
     -p 15581:15581 \
-    --network bridge \
+    --net bridge \
     --name iotedgec \
     -e HOST_HOSTNAME="iotedge-runtime" \
     -e IOT_DEVICE_CONNSTR="$IOT_DEVICE_CONNSTR" \
