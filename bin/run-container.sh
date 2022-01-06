@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker_network=$(docker network list | awk '/azure-iot-edge/ { print $2 }' | grep '^azure-iot-edge$')
+docker_network=$(docker network ls | awk '/azure-iot-edge/ { print $2 }' | grep '^azure-iot-edge$')
 
 if [ ! -z "$docker_network" ]; then
   echo 'azure-iot-edge docker network found.'
