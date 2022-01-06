@@ -6,7 +6,7 @@ if [ ! -z "$docker_network" ]; then
   echo 'azure-iot-edge docker network found.'
 else
   echo 'azure-iot-edge docker network not found, creating...'
-  docker network create --attachable azure-iot-edge
+  docker network create azure-iot-edge
 fi
 
 if [ -z ${IOT_DEVICE_CONNSTR} ]; then
@@ -23,7 +23,7 @@ docker run \
     -v //var//run//docker.sock://var//run//docker.sock \
     -p 15580:15580 \
     -p 15581:15581 \
-    --net bridge \
+    --net=host \
     --name iotedgec \
     -e HOST_HOSTNAME="iotedge-runtime" \
     -e IOT_DEVICE_CONNSTR="$IOT_DEVICE_CONNSTR" \
