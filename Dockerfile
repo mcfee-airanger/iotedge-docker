@@ -15,7 +15,7 @@ RUN curl https://packages.microsoft.com/config/ubuntu/16.04/multiarch/prod.list 
     curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg && \
     cp ./microsoft.gpg /etc/apt/trusted.gpg.d/
 
-RUN echo "deb http://security.ubuntu.com/ubuntu bionic-security main" | tee -a /etc/apt/sources.list.d/bionic.list
+#RUN echo "deb http://security.ubuntu.com/ubuntu bionic-security main" | tee -a /etc/apt/sources.list.d/bionic.list
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libssl1.0.0 \
